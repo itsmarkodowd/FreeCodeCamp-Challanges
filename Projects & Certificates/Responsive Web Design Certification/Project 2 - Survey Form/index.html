@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center" id="title">Survey Form</h1>
+    <p class="text-center" id="description">Complete the following fields</p>
+  </header>
+
+  <form class="container bg-primary text-white" id="survey-form">
+   <div class="form-row">
+     <div class="form-group col-md-6 my-2">
+      <label class="form-group" id="name-label" for="name">Name: </label>
+      <input type="text" name="name" id="name"  class="form-control" placeholder="Enter Name" required>
+    </div>
+    <div class="form-group col-md-6 my-2">
+      <label class="form-group" id="email-label" for="email">Email: </label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email" required>
+    </div>
+  </div>
+  <div class="form-row">
+   <div class="form-group col-md-6">
+    <label id="number-label" for="Number">Number: </label>
+    <input type="number" name="number" id="number" min="0" max="100" class="form-control" placeholder="Enter Number" required>
+  </div>
+  <div class="form-group col-md-6">
+    <label id="dropdown-label" for="dropdown">Dropdown: </label>
+    <select id="dropdown" class="form-control">
+      <option value="one">One</option>
+      <option value="two">Two</option>
+    </select>
+  </div>
+</div>
+<div class="form-row">
+ <fieldset class="form-group col-md-6">
+  <div class="row">
+    <legend class="col-form-label col-sm-4 pt-0">Radio Buttons:</legend>
+    <div class="col-sm-8">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">First Radio</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">Second Radio</label>
+      </div>
+    </div>
+  </div>
+</fieldset>
+<div class="form-group row col-md-6">
+  <div class="col-sm-4">Checkboxes: </div>
+  <div class="col-sm-8">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck1" value="checkbox1">
+      <label class="form-check-label" for="gridCheck1">Checkbox 1</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck2" value="checkbox2">
+      <label class="form-check-label" for="gridCheck1">Checkbox 2</label>
+    </div>
+  </div>
+</div>
+</div>
+<div class="form-group">
+  <label for="textarea">Textarea:</label>
+  <textarea id="comments" class="form-control" name="comment" placeholder="Enter Text"></textarea>
+</div>
+<div class="form-group row">
+  <div class="col-sm-10">
+    <button id="submit" type="submit" class="btn bg-white my-2">Submit</button>
+  </div>
+</div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
