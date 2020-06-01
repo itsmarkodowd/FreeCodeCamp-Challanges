@@ -11,7 +11,7 @@ Given two sets (for example set A = {1, 2, 3} and set B = {2, 3, 4}), the mathem
 # My Answer
 
 ```
-function sym() {
+function symmetricDifference() {
   // var combinedArray = arguments[0].concat(arguments[1]);
 
   // var set = [...new Set(combinedArray)];
@@ -24,9 +24,9 @@ function sym() {
   return difference.sort(function(a, b){return a-b});
 }
 
-sym([1, 2, 3], [5, 2, 1, 4]);
+symmetricDifference([1, 2, 3], [5, 2, 1, 4]);
 ```
 
 # Comments & Hurdles
 
-* 
+-
